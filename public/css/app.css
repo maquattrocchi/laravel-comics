@@ -60,6 +60,12 @@ header .container li a {
 header .container li a:hover, header .container li a.selected {
   color: #0282F9;
 }
+header .container .search {
+  border-bottom: solid 2px #0282F9;
+  width: 100px;
+  text-align: end;
+  font-size: 0.8rem;
+}
 header .line {
   padding: 0.4rem 0;
   background-color: #0282F9;

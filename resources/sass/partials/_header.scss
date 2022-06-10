@@ -34,6 +34,12 @@ header{
                 }
             }
         }
+        .search{
+            border-bottom: solid 2px $blueColor;
+            width: 100px;
+            text-align: end;
+            font-size: 0.8rem;
+        }
     }
     .line{
         padding: 0.4rem 0;

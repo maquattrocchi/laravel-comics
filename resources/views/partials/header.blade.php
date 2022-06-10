@@ -22,5 +22,8 @@
                 <li><a href="/">Shop</a></li>
             </ul>
         </nav>
+        <div class="search">
+            <span>Search <i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
     </div>
 </header>
