@@ -13,6 +13,6 @@
     <main>
         @yield('mainContent')
     </main>
-    @include('partials.footer')
+    @include('partials.footer', ['data_footer' => $data_footer])
 </body>
 </html>

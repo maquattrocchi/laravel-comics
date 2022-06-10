@@ -3,109 +3,109 @@ return[
     'dcComicsList' => [
         [
             'testo' => 'Characters',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'Comics',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'Movies',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'TV',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'Games',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'Videos',
-            'url' => '#',
+            'url' => '/',
         ],
         [
             'testo' => 'News',
-            'url' => '#',
+            'url' => '/',
         ],
     ],
     'shopList' => [
         [
             'testo' => 'Shop DC',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Shop DC Collectibles',
-            'url' => '#'
+            'url' => '/'
         ]
     ],
-    'dcList '=> [
+    'dcList'=> [
         [
             'testo' => 'Terms Of Use',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Privacy policy (New)',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Ad Choices',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Advertising',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Jobs',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Subscriptions',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Talent Workshop',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'CPSC Certificates',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Ratings',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Shop Help',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'Contact Us',
-            'url' => '#'
+            'url' => '/'
         ],
     ],
     'sitesList' => [
         [
             'testo' => 'DC',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'MAD Magazine',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'DC Kids',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'DC Univers',
-            'url' => '#'
+            'url' => '/'
         ],
         [
             'testo' => 'DC Power Visa',
-            'url' => '#'
+            'url' => '/'
         ],
     ]
 ]
