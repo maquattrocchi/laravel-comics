@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-gap-1 {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img {
+  width: 50px;
+}
+header .container li {
+  padding: 2rem 0;
+  border-bottom: 3px solid transparent;
+}
+header .container li.selected {
+  border-color: #0282F9;
+}
+header .container li a {
+  color: #1C1C1C;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+header .container li a:hover, header .container li a.selected {
+  color: #0282F9;
+}
+header .line {
+  padding: 0.4rem 0;
+  background-color: #0282F9;
+}
+header .line .container:first-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+header .line .container:first-of-type span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.6rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    height: 86px;
+    display: flex;
+    align-items: center;
+  }
+  header nav {
+    display: none;
+  }
+}
