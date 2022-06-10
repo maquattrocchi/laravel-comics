@@ -1,0 +1,85 @@
+main{
+    .jumbotron{
+        margin-top: 110px;
+        background-image: url(../images/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    #first-section{
+        background-color: $blackColor;
+        padding: 2rem 0;
+    
+        .container{
+            @include flex('justifycenter');
+            flex-wrap: wrap;
+            position: relative;
+    
+            .button{
+                padding: 0.5rem 1rem;
+                background-color: $blueColor;
+                color: $whiteColor;
+                text-transform: uppercase;
+                position: absolute;
+    
+                &.title{
+                    left: 0;
+                    top: -52px;
+                }
+    
+                &.btn{
+                    bottom: -16px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 0.8rem;
+                }
+            }
+            .col{
+                width: calc((100% / 12) * 2);
+                max-width: calc((100% / 12) * 2);
+                flex: 0 0 auto;
+        
+                .prod-card{
+                    padding: 1rem;
+        
+                    .card-image{
+                        height: 150px;
+                        overflow: hidden;
+        
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        color: $whiteColor;
+                        text-transform: uppercase;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    #second-section{
+        background-color: $blueColor;
+
+        .container{
+            @include flex();
+
+            nav{
+                padding: 2rem 0;
+
+                img{
+                    height: 35px;
+                    vertical-align: middle;
+                    margin-right: 0.5rem;
+                }
+                a{
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
