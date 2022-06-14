@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $comics = config('comics');
-    $data_footer = config('footer');
-    return view('comics', ['comics' => $comics, 'data_footer' => $data_footer]);
-});
+Route::get('/', 'ComicController@index')->name('comics');
+
+
+Route::get('/detail/{id}', 'ComicController@show')->name('detail');
+

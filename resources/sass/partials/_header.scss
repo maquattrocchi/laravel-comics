@@ -32,6 +32,10 @@ header{
                 &.selected{
                     color: $blueColor;
                 }
+                .fa-caret-down{
+                    color: $blueColor;
+                    margin-left: 0.5rem;
+                }
             }
         }
         .search{
@@ -56,13 +60,3 @@ header{
     }
 }
 
-@media screen and (max-width: 991px){
-    header{
-        height: 86px;
-        @include flex('aligncenter');
-
-        nav{
-            display: none;
-        }
-    }
-}

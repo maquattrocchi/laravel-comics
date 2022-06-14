@@ -17,7 +17,7 @@
                 <div class="col">
                     <div class="prod-card">
                         <div class="card-image">
-                            <a href=""><img src="{{$comic['thumb']}}" alt="{{$comic['series']}}"></a>
+                            <a href="{{route('detail', $comic['id'])}}"><img src="{{$comic['thumb']}}" alt="{{$comic['series']}}"></a>
                         </div>
                         <p>{{$comic['series']}}</p>
                     </div>
@@ -54,8 +54,5 @@
                 </ul>
             </nav>
         </div>
-    </section>
-    <section>
-
     </section>
 @endsection

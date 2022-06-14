@@ -1,0 +1,172 @@
+.main-box{
+    width: 60%;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.col-3{
+    width: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+    flex: 0 0 auto;
+}
+.col-4{
+    width: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+    flex: 0 0 auto;
+}
+.col-8{
+    width: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+    flex: 0 0 auto;
+}
+.col-6{
+    width: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+    flex: 0 0 auto;
+    &>div{
+        padding: 0 1rem;
+    }
+}
+.pe-0{
+    padding-right: 0 !important;
+}
+.ps-0{
+    padding-left: 0 !important;
+}
+.bor-bot-grey{
+    border-bottom: 2px solid #e2e2e2;
+}
+main{
+    #first-sec-single{
+        .blu-line{
+            height: 50px;
+            background-color: $blueColor;
+        }
+        .main-box{
+            position: relative;
+            .comic-box{
+                border: 2px solid $whiteColor;
+                width: 140px;
+                position: absolute;
+                left: 0;
+                bottom: 25px;
+                img{
+                    width: 100%;
+                }
+                span{
+                    position: absolute;
+                    background-color: #00A9D9;
+                    color: $whiteColor;
+                    padding: 0.3rem;
+                    font-size: 0.7rem;
+                    &:first-of-type{
+                        top: 0;
+                        left: 0;
+                    }
+                    &:last-of-type{
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    #second-sec-single{
+        padding: 2rem 0;
+        .main-box{
+            .col-8{
+                &>div{
+                    padding: 0 1rem 0 0;
+                    &>*{
+                        margin-bottom: 1rem;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    h1{
+                        color: #003F5E;
+                    }
+                    .row{
+                        background-color: #55BA59;
+                        border-bottom: 2px solid #429246;
+                        color: $whiteColor;
+                        .right{
+                            @include flex('between');
+                            border-right: 2px solid #429246;
+                            width: 65%;
+                            padding: 0.5rem;
+                        }
+                        .left{
+                            padding: 0.5rem;
+                        }
+                        span{
+                            color: #92F395;
+                        }
+                    }
+                    &>p{
+                        color:  #7e7c7c;
+                    }
+                }
+            }
+            .col-4{
+                &>div{
+                    padding: 0 0 0 1rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #third-sec-single{
+        background-color: #F6F6F6;
+        border-top: 2px solid #e2e2e2;
+        padding-bottom: 150px;
+        .col-6{
+            h2{
+                color: #121252;
+                padding: 1.5rem 0;
+            }
+            .blue-text{
+                color: #121252;
+                font-weight: bold;
+            }
+            .l-blue-text{
+                color: $blueColor;
+            }
+            .col-4{
+                padding: 1rem 0;
+            }
+            .col-8{
+                padding: 1rem 0;
+            }
+        }
+    }
+    #fourth-sec-single{
+        background-color: #F6F6F6;
+        border-top: 2px solid #e2e2e2; 
+        .row{
+            @include flex('between');
+            align-items: stretch;
+            .col-3{
+                border-right: 2px solid #e2e2e2;
+                padding: 0.5rem;
+                &:first-of-type{
+                    border-right: 2px solid #e2e2e2;
+                    border-left: 2px solid #e2e2e2;
+                }
+                img{
+                    height: 40px;
+                    filter: brightness(0.5);
+                    -webkit-filter: brightness(0.5);
+                }
+                a{
+                    color: #9b9b9b;;
+                }
+            }
+        }
+    }
+}

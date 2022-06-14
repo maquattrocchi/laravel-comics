@@ -60,6 +60,10 @@ header .container li a {
 header .container li a:hover, header .container li a.selected {
   color: #0282F9;
 }
+header .container li a .fa-caret-down {
+  color: #0282F9;
+  margin-left: 0.5rem;
+}
 header .container .search {
   border-bottom: solid 2px #0282F9;
   width: 100px;
@@ -81,16 +85,6 @@ header .line .container:first-of-type span {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 991px) {
-  header {
-    height: 86px;
-    display: flex;
-    align-items: center;
-  }
-  header nav {
-    display: none;
-  }
-}
 main .jumbotron {
   margin-top: 110px;
   background-image: url(../images/jumbotron.jpg);
@@ -229,4 +223,178 @@ footer #footer-bottom .container .right-footer p {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.main-box {
+  width: 60%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  width: 25%;
+  max-width: 25%;
+  flex: 0 0 auto;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+  flex: 0 0 auto;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+  flex: 0 0 auto;
+}
+
+.col-6 {
+  width: 50%;
+  max-width: 50%;
+  flex: 0 0 auto;
+}
+.col-6 > div {
+  padding: 0 1rem;
+}
+
+.pe-0 {
+  padding-right: 0 !important;
+}
+
+.ps-0 {
+  padding-left: 0 !important;
+}
+
+.bor-bot-grey {
+  border-bottom: 2px solid #e2e2e2;
+}
+
+main #first-sec-single .blu-line {
+  height: 50px;
+  background-color: #0282F9;
+}
+main #first-sec-single .main-box {
+  position: relative;
+}
+main #first-sec-single .main-box .comic-box {
+  border: 2px solid white;
+  width: 140px;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+main #first-sec-single .main-box .comic-box img {
+  width: 100%;
+}
+main #first-sec-single .main-box .comic-box span {
+  position: absolute;
+  background-color: #00A9D9;
+  color: white;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+}
+main #first-sec-single .main-box .comic-box span:first-of-type {
+  top: 0;
+  left: 0;
+}
+main #first-sec-single .main-box .comic-box span:last-of-type {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+main #second-sec-single {
+  padding: 2rem 0;
+}
+main #second-sec-single .main-box .col-8 > div {
+  padding: 0 1rem 0 0;
+}
+main #second-sec-single .main-box .col-8 > div > * {
+  margin-bottom: 1rem;
+}
+main #second-sec-single .main-box .col-8 > div > *:last-child {
+  margin-bottom: 0;
+}
+main #second-sec-single .main-box .col-8 > div h1 {
+  color: #003F5E;
+}
+main #second-sec-single .main-box .col-8 > div .row {
+  background-color: #55BA59;
+  border-bottom: 2px solid #429246;
+  color: white;
+}
+main #second-sec-single .main-box .col-8 > div .row .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid #429246;
+  width: 65%;
+  padding: 0.5rem;
+}
+main #second-sec-single .main-box .col-8 > div .row .left {
+  padding: 0.5rem;
+}
+main #second-sec-single .main-box .col-8 > div .row span {
+  color: #92F395;
+}
+main #second-sec-single .main-box .col-8 > div > p {
+  color: #7e7c7c;
+}
+main #second-sec-single .main-box .col-4 > div {
+  padding: 0 0 0 1rem;
+}
+main #second-sec-single .main-box .col-4 > div img {
+  width: 100%;
+}
+main #third-sec-single {
+  background-color: #F6F6F6;
+  border-top: 2px solid #e2e2e2;
+  padding-bottom: 150px;
+}
+main #third-sec-single .col-6 h2 {
+  color: #121252;
+  padding: 1.5rem 0;
+}
+main #third-sec-single .col-6 .blue-text {
+  color: #121252;
+  font-weight: bold;
+}
+main #third-sec-single .col-6 .l-blue-text {
+  color: #0282F9;
+}
+main #third-sec-single .col-6 .col-4 {
+  padding: 1rem 0;
+}
+main #third-sec-single .col-6 .col-8 {
+  padding: 1rem 0;
+}
+main #fourth-sec-single {
+  background-color: #F6F6F6;
+  border-top: 2px solid #e2e2e2;
+}
+main #fourth-sec-single .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+}
+main #fourth-sec-single .row .col-3 {
+  border-right: 2px solid #e2e2e2;
+  padding: 0.5rem;
+}
+main #fourth-sec-single .row .col-3:first-of-type {
+  border-right: 2px solid #e2e2e2;
+  border-left: 2px solid #e2e2e2;
+}
+main #fourth-sec-single .row .col-3 img {
+  height: 40px;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+}
+main #fourth-sec-single .row .col-3 a {
+  color: #9b9b9b;
 }

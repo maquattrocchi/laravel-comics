@@ -19,7 +19,7 @@
                 <li><a href="/">Videos</a></li>
                 <li><a href="/">Fans</a></li>
                 <li><a href="/">News</a></li>
-                <li><a href="/">Shop</a></li>
+                <li><a href="/">Shop<i class="fa-solid fa-caret-down"></i></a></li>
             </ul>
         </nav>
         <div class="search">
